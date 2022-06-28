@@ -111,7 +111,7 @@ func newReadHandler(
 }
 
 func (h *readHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
-	h.logger.Info("Entered into ServeHTTP function")
+	h.logger.Info("Entered into ServeHTTP fn")
 	ctx := r.Context()
 	ctx, request, err := native.ParseRequest(ctx, r, h.opts.instant, h.hOpts)
 	if err != nil {
