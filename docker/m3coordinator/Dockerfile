@@ -7,6 +7,10 @@ RUN apk add --no-cache bash
 RUN apk add --no-cache iperf3
 RUN apk add --no-cache curl
 
+RUN curl -o /tmp/grpcurl_1.3.1_linux_x86_64.tar.gz -L https://github.com/fullstorydev/grpcurl/releases/download/v1.3.1/grpcurl_1.3.1_linux_x86_64.tar.gz
+RUN tar -xvf /tmp/grpcurl_1.3.1_linux_x86_64.tar.gz
+RUN mv grpcurl /bin
+
 # Install deps
 RUN apk add --update git make bash
 
