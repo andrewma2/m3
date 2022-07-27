@@ -29,7 +29,7 @@ You can find recordings of past meetups here: <https://vimeo.com/user/120001164/
 
 ### Dependencies
 
-The simplest and quickest way to try M3 is to use Docker, read [the M3 quickstart section](https://m3db.io/docs/quickstart) for other options.
+The simplest and quickest way to try M3 is to use Docker, read [M3 quickstart section](https://m3db.io/docs/quickstart) for other options.
 
 This example uses [jq](https://stedolan.github.io/jq/) to format the output of API calls. It is not essential for using M3DB.
 
